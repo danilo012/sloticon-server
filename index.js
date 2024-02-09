@@ -280,8 +280,8 @@ function getOrCreateGamestate(userId, gameId) {
         resolveFn(rows[0]);
       } else {
         // create new gamestate
-        const bet = 10;
-        const coinValue = 0.10;
+        const bet = 0.10;
+        const coinValue = 0.01;
         const reels = JSON.stringify(generateRandomReelsPosition(gameId));
         
         const newGamestate = await new Promise((resolve) => {
