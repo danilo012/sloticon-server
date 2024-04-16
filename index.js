@@ -31,8 +31,8 @@ function initIo(io) {
       if (data.key === null) {
         // a new user is trying to login
         const key = md5(uuidv1());
-        const username = 'Player';
-        const balance = '50000.00';
+        const username = 'Guest';
+        const balance = 50000.00;
         try {
           await createNewUser(username, balance, key);
 
@@ -280,7 +280,7 @@ function getOrCreateGamestate(userId, gameId) {
         resolveFn(rows[0]);
       } else {
         // create new gamestate
-        const bet = 1;
+        const bet = 10;
         const coinValue = 0.01;
         const reels = JSON.stringify(generateRandomReelsPosition(gameId));
         
@@ -350,4 +350,4 @@ function updateGamestate(userId, gameId, bet, coinValue, reelsPosition) {
   });
 
   return updateGamestatePromise;
-}
+          }
