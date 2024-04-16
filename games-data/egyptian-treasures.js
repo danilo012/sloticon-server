@@ -145,74 +145,60 @@ const symbolsMultipliers = {
   1: [
     {
       count: 3,
-      multiplier: 1,
-    },
-    {
-      count: 4,
       multiplier: 2,
     },
     {
-      count: 5,
+      count: 4,
       multiplier: 3,
+    },
+    {
+      count: 5,
+      multiplier: 4,
     },
   ],
   2: [
     {
       count: 3,
-      multiplier: 1,
-    },
-    {
-      count: 4,
       multiplier: 2,
     },
     {
-      count: 5,
+      count: 4,
       multiplier: 3,
+    },
+    {
+      count: 5,
+      multiplier: 4,
     },
   ],
   3: [
     {
       count: 3,
-      multiplier: 2,
-    },
-    {
-      count: 4,
       multiplier: 3,
     },
     {
-      count: 5,
+      count: 4,
       multiplier: 4,
+    },
+    {
+      count: 5,
+      multiplier: 5,
     },
   ],
   4: [
     {
       count: 3,
-      multiplier: 2,
-    },
-    {
-      count: 4,
       multiplier: 3,
     },
     {
-      count: 5,
+      count: 4,
       multiplier: 4,
+    },
+    {
+      count: 5,
+      multiplier: 5,
     },
   ],
   5: [
-    {
-      count: 3,
-      multiplier: 5,
-    },
-    {
-      count: 4,
-      multiplier: 10,
-    },
-    {
-      count: 5,
-      multiplier: 15,
-    },
-  ],
-  6: [
     {
       count: 3,
       multiplier: 6,
@@ -226,7 +212,7 @@ const symbolsMultipliers = {
       multiplier: 16,
     },
   ],
-  7: [
+  6: [
     {
       count: 3,
       multiplier: 7,
@@ -237,77 +223,91 @@ const symbolsMultipliers = {
     },
     {
       count: 5,
-      multiplier: 18,
+      multiplier: 17,
     },
   ],
-  8: [
+  7: [
     {
       count: 3,
       multiplier: 8,
     },
     {
       count: 4,
-      multiplier: 15,
+      multiplier: 13,
     },
     {
       count: 5,
-      multiplier: 20,
+      multiplier: 19,
+    },
+  ],
+  8: [
+    {
+      count: 3,
+      multiplier: 9,
+    },
+    {
+      count: 4,
+      multiplier: 16,
+    },
+    {
+      count: 5,
+      multiplier: 21,
     },
   ],
   9: [
     {
       count: 3,
-      multiplier: 10,
+      multiplier: 11,
     },
     {
       count: 4,
-      multiplier: 20,
+      multiplier: 21,
     },
     {
       count: 5,
-      multiplier: 30,
+      multiplier: 31,
     },
   ],
   10: [
     {
       count: 3,
-      multiplier: 12,
+      multiplier: 13,
     },
     {
       count: 4,
-      multiplier: 23,
+      multiplier: 24,
     },
     {
       count: 5,
-      multiplier: 35,
+      multiplier: 36,
     },
   ],
   11: [
     {
       count: 3,
-      multiplier: 15,
+      multiplier: 16,
     },
     {
       count: 4,
-      multiplier: 30,
+      multiplier: 31,
     },
     {
       count: 5,
-      multiplier: 40,
+      multiplier: 41,
     },
   ],
   12: [
     {
       count: 3,
-      multiplier: 20,
+      multiplier: 21,
     },
     {
       count: 4,
-      multiplier: 50,
+      multiplier: 51,
     },
     {
       count: 5,
-      multiplier: 100,
+      multiplier: 101,
     },
   ],
 };
