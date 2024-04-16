@@ -1,30 +1,9 @@
 const linesPositions = [
   [
-    [0, 0, 0, 1],
-    [0, 0, 0, 1],
     [0, 0, 1, 0],
-    [0, 0, 0, 1],
-    [0, 0, 0, 1],
-  ],
-  [
-    [0, 1, 0, 0],
-    [0, 1, 0, 0],
     [0, 0, 1, 0],
-    [0, 1, 0, 0],
-    [0, 1, 0, 0],
-  ],
-  [
     [0, 0, 1, 0],
-    [0, 0, 0, 1],
-    [0, 0, 0, 1],
-    [0, 0, 0, 1],
     [0, 0, 1, 0],
-  ],
-  [
-    [0, 0, 1, 0],
-    [0, 1, 0, 0],
-    [0, 1, 0, 0],
-    [0, 1, 0, 0],
     [0, 0, 1, 0],
   ],
   [
@@ -35,18 +14,18 @@ const linesPositions = [
     [0, 1, 0, 0],
   ],
   [
-    [0, 0, 1, 0],
-    [0, 0, 1, 0],
-    [0, 0, 1, 0],
-    [0, 0, 1, 0],
-    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
   ],
   [
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
     [0, 0, 0, 1],
-    [0, 0, 0, 1],
-    [0, 0, 0, 1],
-    [0, 0, 0, 1],
-    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
   ],
   [
     [0, 0, 0, 1],
@@ -56,10 +35,108 @@ const linesPositions = [
     [0, 0, 0, 1],
   ],
   [
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+  ],
+  [
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+  ],
+  [
+    [0, 1, 0, 0],
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
+  ],
+  [
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+    [0, 1, 0, 0],
+  ],
+  [
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+  ],
+  [
+    [0, 0, 1, 0],
     [0, 1, 0, 0],
     [0, 0, 1, 0],
     [0, 0, 0, 1],
     [0, 0, 1, 0],
+  ],
+  [
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+    [0, 0, 1, 0],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+  ],
+  [
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [0, 0, 1, 0],
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+  ],
+  [
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+  ],
+  [
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+  ],
+  [
+    [0, 0, 1, 0],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+    [0, 0, 1, 0],
+  ],
+  [
+    [0, 0, 1, 0],
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [0, 0, 1, 0],
+  ],
+  [
+    [0, 1, 0, 0],
+    [0, 1, 0, 0],
+    [0, 0, 0, 1],
+    [0, 1, 0, 0],
+    [0, 1, 0, 0],
+  ],
+  [
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
+    [0, 1, 0, 0],
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
+  ],
+  [
+    [0, 1, 0, 0],
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
+    [0, 0, 0, 1],
     [0, 1, 0, 0],
   ],
 ];
@@ -68,105 +145,35 @@ const symbolsMultipliers = {
   1: [
     {
       count: 3,
-      multiplier: 0.1,
+      multiplier: 1.5,
     },
     {
       count: 4,
-      multiplier: 0.5,
+      multiplier: 2.5,
     },
     {
       count: 5,
-      multiplier: 2,
+      multiplier: 3.5,
     },
   ],
   2: [
     {
       count: 3,
-      multiplier: 0.1,
+      multiplier: 1.5,
     },
     {
       count: 4,
-      multiplier: 0.5,
+      multiplier: 2.5,
     },
     {
       count: 5,
-      multiplier: 2,
+      multiplier: 3.5,
     },
   ],
   3: [
     {
       count: 3,
-      multiplier: 0.2,
-    },
-    {
-      count: 4,
-      multiplier: 0.5,
-    },
-    {
-      count: 5,
-      multiplier: 2,
-    },
-  ],
-  4: [
-    {
-      count: 3,
-      multiplier: 0.2,
-    },
-    {
-      count: 4,
-      multiplier: 0.5,
-    },
-    {
-      count: 5,
-      multiplier: 2,
-    },
-  ],
-  5: [
-    {
-      count: 3,
-      multiplier: 0.3,
-    },
-    {
-      count: 4,
-      multiplier: 1,
-    },
-    {
-      count: 5,
       multiplier: 2.5,
-    },
-  ],
-  6: [
-    {
-      count: 3,
-      multiplier: 0.5,
-    },
-    {
-      count: 4,
-      multiplier: 2.5,
-    },
-    {
-      count: 5,
-      multiplier: 5,
-    },
-  ],
-  7: [
-    {
-      count: 3,
-      multiplier: 1,
-    },
-    {
-      count: 4,
-      multiplier: 3,
-    },
-    {
-      count: 5,
-      multiplier: 5.5,
-    },
-  ],
-  8: [
-    {
-      count: 3,
-      multiplier: 1,
     },
     {
       count: 4,
@@ -174,7 +181,133 @@ const symbolsMultipliers = {
     },
     {
       count: 5,
-      multiplier: 6,
+      multiplier: 4.5,
+    },
+  ],
+  4: [
+    {
+      count: 3,
+      multiplier: 2.5,
+    },
+    {
+      count: 4,
+      multiplier: 3.5,
+    },
+    {
+      count: 5,
+      multiplier: 4.5,
+    },
+  ],
+  5: [
+    {
+      count: 3,
+      multiplier: 5.5,
+    },
+    {
+      count: 4,
+      multiplier: 10.5,
+    },
+    {
+      count: 5,
+      multiplier: 15.5,
+    },
+  ],
+  6: [
+    {
+      count: 3,
+      multiplier: 6.5,
+    },
+    {
+      count: 4,
+      multiplier: 11.5,
+    },
+    {
+      count: 5,
+      multiplier: 16.5,
+    },
+  ],
+  7: [
+    {
+      count: 3,
+      multiplier: 7.5,
+    },
+    {
+      count: 4,
+      multiplier: 12.5,
+    },
+    {
+      count: 5,
+      multiplier: 18.5,
+    },
+  ],
+  8: [
+    {
+      count: 3,
+      multiplier: 8.5,
+    },
+    {
+      count: 4,
+      multiplier: 15.5,
+    },
+    {
+      count: 5,
+      multiplier: 20.5,
+    },
+  ],
+  9: [
+    {
+      count: 3,
+      multiplier: 10.5,
+    },
+    {
+      count: 4,
+      multiplier: 20.5,
+    },
+    {
+      count: 5,
+      multiplier: 30.5,
+    },
+  ],
+  10: [
+    {
+      count: 3,
+      multiplier: 12.5,
+    },
+    {
+      count: 4,
+      multiplier: 23.5,
+    },
+    {
+      count: 5,
+      multiplier: 35.5,
+    },
+  ],
+  11: [
+    {
+      count: 3,
+      multiplier: 15.5,
+    },
+    {
+      count: 4,
+      multiplier: 30.5,
+    },
+    {
+      count: 5,
+      multiplier: 40.5,
+    },
+  ],
+  12: [
+    {
+      count: 3,
+      multiplier: 20.5,
+    },
+    {
+      count: 4,
+      multiplier: 50.5,
+    },
+    {
+      count: 5,
+      multiplier: 100.5,
     },
   ],
 };
@@ -182,7 +315,7 @@ const symbolsMultipliers = {
 module.exports = {
   reelsCount: 5,
   reelPositions: 3,
-  symbolsCount: 8,
+  symbolsCount: 12,
   linesPositions,
   symbolsMultipliers,
 };
