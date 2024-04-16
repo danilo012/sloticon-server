@@ -31,8 +31,8 @@ function initIo(io) {
       if (data.key === null) {
         // a new user is trying to login
         const key = md5(uuidv1());
-        const username = 'Guest';
-        const balance = '100';
+        const username = 'Player';
+        const balance = '200.00';
         try {
           await createNewUser(username, balance, key);
 
