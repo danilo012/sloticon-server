@@ -182,7 +182,7 @@ const symbolsMultipliers = {
 module.exports = {
   reelsCount: 5,
   reelPositions: 3,
-  symbolsCount: 12,
+  symbolsCount: 8,
   linesPositions,
   symbolsMultipliers,
 };
