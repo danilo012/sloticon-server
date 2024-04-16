@@ -32,7 +32,7 @@ function initIo(io) {
         // a new user is trying to login
         const key = md5(uuidv1());
         const username = 'Guest';
-        const balance = '90.00';
+        const balance = '100';
         try {
           await createNewUser(username, balance, key);
 
