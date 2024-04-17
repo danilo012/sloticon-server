@@ -349,11 +349,7 @@ function updateGamestate(userId, gameId, bet, coinValue, reelsPosition) {
     }
   });
 
-  const balanceString = JSON.stringify(balance);
-localStorage.setItem('balance', saveStateString);
-
-const loadbalanceString = localStorage.getItem('balance');
-const loadbalance = JSON.parse(loadbalanceString);
+  
 
   return updateGamestatePromise;
           }
