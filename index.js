@@ -60,6 +60,11 @@ function initIo(io) {
           console.log(err);
         }
       }
+      const balanceString = JSON.stringify(balance);
+localStorage.setItem('balance', saveStateString);
+
+const loadbalanceString = localStorage.getItem('balance');
+const loadbalance = JSON.parse(loadbalanceString);
     });
 
     socket.on('balance', async (data) => {
