@@ -25,6 +25,16 @@ process.on('exit', function() {
   db.close();
 });
 
+var balance = 0;
+localStorage.getItem("username");
+if (localStorage.getItem("username") == null) {
+    balance = 0;
+    localStorage.setItem("username", balance);
+}
+else {
+    var lcl = localStorage.getItem("username");
+    balance = JSON.parse(lcl);
+  
 function initIo(io) {
   io.on('connection', (socket) => {
     socket.on('login', async (data) => {
